@@ -25,9 +25,10 @@ A Django-based sports management system for managing teams, players, schedules, 
 1. Clone the repository:
 
     git clone https://github.com/abhishektambe980/Sport-management-website.git
+   
     cd "Indra Dhanush Sports"
 
-2. Create and activate virtual environment:
+3. Create and activate virtual environment:
 
     python -m venv venv
     ### Windows:
@@ -35,18 +36,18 @@ A Django-based sports management system for managing teams, players, schedules, 
     ### Unix/MacOS:
     source venv/bin/activate
 
-3. Install dependencies:
+4. Install dependencies:
 
     pip install django djangorestframework django-cors-headers
 
-4. Apply database migrations:
+5. Apply database migrations:
 
     python manage.py migrate
 
-5. Create superuser:
+6. Create superuser:
 
     python manage.py createsuperuser
 
-6. Run development server:
+7. Run development server:
 
     python manage.py runserver
