@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Indra Dhanush Sports</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    {% csrf_token %}
+    <script type="text/javascript">
+        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value; // This gets the CSRF token from the input field
+    </script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="{% static 'Images/logo.jpeg' %}" alt="Indra Dhanush Sports Logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#schedules">Schedules</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#recruiting">Recruiting</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empowering Athletes and Teams to Succeed</h1>
+        <p>Welcome to Indra Dhanush Sports</p>
+        <button class="cta" id="ctaButton">Learn More About Our Services</button>
+    </section>
+
+    <!-- Featured Sections -->
+    <section class="featured">
+        <div class="expertise">
+            <h2>Our Expertise</h2>
+            <p>We provide top-notch management services for teams and athletes.</p>
+        </div>
+        <div class="success-stories">
+            <h2>Success Stories</h2>
+            <p>Read testimonials and case studies from our satisfied clients.</p>
+        </div>
+        <div class="latest-news">
+            <h2>Latest News</h2>
+            <p>Check out the recent updates and press releases.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about">
+    <h1>About Indra Dhanush Sports</h1>
+
+    <!-- Mission Statement -->
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p>At Indra Dhanush Sports, our mission is to empower athletes and teams to reach their full potential, both on and off the field.</p>
+    </div>
+
+    <!-- Company History -->
+    <div class="history">
+        <h2>Our History</h2>
+        <p>Founded in 2010, Indra Dhanush Sports has a decade of experience in sports management. We’ve worked with numerous athletes and teams, helping them achieve their goals.</p>
+    </div>
+
+    <!-- Core Values -->
+    <div class="values">
+        <h2>Our Core Values</h2>
+        <ul>
+            <li>Integrity: We value honesty and transparency in all our dealings.</li>
+            <li>Excellence: We strive for the highest standards in everything we do.</li>
+            <li>Teamwork: We believe in collaboration to achieve greatness.</li>
+            <li>Innovation: We embrace new ideas and technology to enhance performance.</li>
+        </ul>
+    </div>
+
+    <!-- Leadership Team -->
+    <div class="leadership">
+        <h2>Meet Our Leadership</h2>
+        <div class="leaders">
+            <div class="leader">
+                <img src="{% static 'images/leader1.jpg' %}" alt="Leader 1">
+                <h3>Veerendra Singh Rathore</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="leader">
+                <img src="{% static  'images/leader2.jpg' %}" alt="Leader 2">
+
+                <h3>Anjali Sharma</h3>
+                <p>Co-Founder & COO</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Teams Section -->
+<section id="teams">
+    <h1>Our Teams</h1>
+    <p>Meet the teams we manage and support, dedicated to excellence in their respective sports.</p>
+
+    <div class="team-list">
+        <div class="team">
+            <h2>Indra Dhanush Dribbles</h2>
+            <p>Sport: Basketball</p>
+            <p>Coach: Priya Singh</p>
+            <a href="#" class="view-details">View Details</a>
+        </div>
+        <div class="team">
+            <h2>Indra Dhanush Football</h2>
+            <p>Sport: Football</p>
+            <p>Coach: Ravi Gupta</p>
+            <a href="#" class="view-details">View Details</a>
+        </div>
+        <div class="team">
+            <h2>Indra Dhanush Defenders</h2>
+            <p>Sport: Volleyball</p>
+            <p>Coach: Aryan Patel</p>
+            <a href="#" class="view-details">View Details</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Schedules Section -->
+<section id="schedules">
+    <h1>Upcoming Games and Events</h1>
+    <p>Stay updated with the latest schedules for your favorite teams.</p>
+
+    <!-- Schedule List -->
+    <div class="schedule-list">
+        <div class="game">
+            <h2>Indra Dhanush Dynamos vs. Viraat Aces</h2>
+            <p>Date: March 5, 2024</p>
+            <p>Time: 7:00 PM</p>
+            <p>Sport : Tennis</p>
+            <p>Venue: Sports Arena</p>
+        </div>
+        <div class="game">
+            <h2>Aakash Spikers vs. Dhyan Chand Defenders</h2>
+            <p>Date: March 6, 2024</p>
+            <p>Time: 6:00 PM</p>
+            <p>Sport : Volleyball</p>
+            <p>Venue: City Stadium</p>
+        </div>
+        <div class="game">
+            <h2>Indra Dhanush Dribbles vs. Viraat Hoops</h2>
+            <p>Date: March 7, 2024</p>
+            <p>Time: 5:00 PM</p>
+            <p>Sport : Basketball</p>
+            <p>Venue: Community Park</p>
+        </div>
+    </div>
+</section>
+
+    <!-- News Section -->
+<section id="news">
+    <h1>Latest News</h1>
+
+    <!-- Featured Story -->
+    <div class="featured-story">
+        <img src="{% static 'Images/featured-news.jpeg' %}" alt="Featured News Story">
+        <div class="story-content">
+            <h2>Robert Lewandowski's first-half hat-trick powers Barcelona to emphatic victory over Alaves</h2>
+            <p>Robert Lewandowski's first-half hat-trick powers Barcelona to emphatic victory over Alaves.
+               Robert Lewandowski's 26-minute hat-trick steered La Liga leaders Barcelona three points clear of Real Madrid with an emphatic 3-0 win at Alaves on Sunday.</p>
+        </div>
+    </div>
+
+    <!-- News Feed -->
+    <div class="news-feed">
+        <article>
+            <img src="{% static 'Images/news1.jpeg' %}" alt="News 1">
+            <h3>Kerala basketball championship: T'puram men & women enter finals</h3>
+            <p>KOCHI: The Thiruvananthapuram men and women’s teams entered the finals of the 68th Kerala State Basketball Championship being held at the Regional Sports Centre in Kadavanthra, Kochi.</p>
+        </article>
+        <article>
+            <img src="{% static  'Images/news2.jpeg' %}" alt="News 2">
+
+            <h3>India wins historic double team gold at FIDE Chess Olympiad 2024</h3>
+            <p>India’s two team and four individual gold medals are hailed as the beginning of the country’s reign as the ‘best chess nation in the world’.</p>
+        </article>
+        <!-- Add more news articles as needed -->
+    </div>
+</section>
+
+
+<!-- Recruiting Section -->
+<section id="recruiting">
+    <h1>Join Our Team</h1>
+    <p>We’re always looking for talented athletes to join our teams. Please fill out the form below to submit your application.</p>
+
+    <div class="recruiting-form">
+        <form id="recruitForm">
+            {% csrf_token %}
+            <label for="recruitName">Full Name</label>
+            <input type="text" id="recruitName" name="name" placeholder="Your full name" required autocomplete="name"> <!-- Added autocomplete -->
+
+            <label for="recruitAge">Age</label>
+            <input type="int" id="recruitAge" name="age" placeholder="Age" required autocomplete="age"> <!-- Added autocomplete -->
+
+            <label for="recruitGender">Gender</label>
+            <select id="recruitGender" name="gender" required autocomplete="off"> <!-- Added autocomplete -->
+                <option value="">Select your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="recruitSport">Sport</label>
+            <select id="recruitSport" name="sport" required autocomplete="off"> <!-- Added autocomplete -->
+                <option value="">Select your sport</option>
+                <option value="basketball">Basketball</option>
+                <option value="soccer">Soccer</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="tennis">Tennis</option>
+            </select>
+
+            <label for="recruitEmail">Email Address</label>
+            <input type="email" id="recruitEmail" name="email" placeholder="Your email address" required autocomplete="email"> <!-- Added autocomplete -->
+
+            <label for="recruitPhone">Phone Number</label>
+            <input type="tel" id="recruitPhone" name="phone" placeholder="Your phone number" required autocomplete="tel"> <!-- Added autocomplete -->
+
+            <label for="recruitBio">Player Bio</label>
+            <textarea id="recruitBio" name="bio" rows="4" placeholder="Tell us more about your experience" required></textarea> <!-- No autocomplete needed for textarea -->
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</section>
+
+            
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="footer-container">
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us using the form below or through our social media channels.</p>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: indradhanushstsports@gmail.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Sports Ave, Sports City, SC 12345</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="contactForm" method="POST">
+                    {% csrf_token %}
+                    <label for="contactName">Full Name</label>
+                    <input type="text" id="contactName" name="name" placeholder="Your full name" required>
+
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="Your email address" required>
+
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" placeholder="Your message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <p>&copy; 2024 Indra Dhanush Sports. All rights reserved.</p>
+</footer>
+
+
+<!-- Script linking (update your <script> tag to link the external script file properly) -->
+<script src="{% static 'scripts.js' %}" defer></script>
+
+</body>
+</html>
