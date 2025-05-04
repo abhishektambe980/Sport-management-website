@@ -24,7 +24,7 @@ A Django-based sports management system for managing teams, players, schedules, 
 
 1. Clone the repository:
 
-    git clone <repository-url>
+    git clone https://github.com/abhishektambe980/Sport-management-website.git
     cd "Indra Dhanush Sports"
 
 2. Create and activate virtual environment:
