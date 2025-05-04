@@ -1,6 +1,7 @@
 # Indra Dhanush Sports Management System
 
 A Django-based sports management system for managing teams, players, schedules, and recruiting.
+![](homepage.png)
 
 ## Features
 
